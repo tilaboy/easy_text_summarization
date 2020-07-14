@@ -52,7 +52,7 @@ clean-test: ## remove test and coverage artifacts
 	rm -fr .pytest_cache
 
 lint: ## check style with flake8
-	flake8 zhihu_text_summarization
+	flake8 text_summarization
 
 test: ## run tests quickly with the default Python
 	python -m pytest  -W ignore::DeprecationWarning
@@ -61,15 +61,15 @@ test-all: ## run tests on every Python version with tox
 	tox
 
 coverage: ## check code coverage quickly with the default Python
-	coverage run --source zhihu_text_summarization -m pytest
+	coverage run --source text_summarization -m pytest
 	coverage report -m
 	coverage html
 	$(BROWSER) htmlcov/index.html
 
 docs: ## generate Sphinx HTML documentation, including API docs
-	rm -f docs/zhihu_text_summarization.rst
+	rm -f docs/text_summarization.rst
 	rm -f docs/modules.rst
-	sphinx-apidoc -o docs/ zhihu_text_summarization
+	sphinx-apidoc -o docs/ text_summarization
 	$(MAKE) -C docs clean
 	$(MAKE) -C docs html
 	$(BROWSER) docs/_build/html/index.html

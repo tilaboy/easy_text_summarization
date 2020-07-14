@@ -1,4 +1,4 @@
-zhihu-text-summarization
+text-summarization
 ==================
 
 
@@ -20,7 +20,7 @@ Tutorial
 
 run:
 
-``zhihu-text-summarization train cfg/tf.json``
+``text-summarization train cfg/tf.json``
 
 and you will see the training start with the input documents specified in
 the config file.
@@ -31,8 +31,8 @@ Usage
 
 TRAIN: (example config\_file can be found in cfg/)
 
-``zhihu-text-summarization train config_file``
+``text-summarization train config_file``
 
 PROCESS BATCH:
 
-``zhihu-text-summarization predict config_file [output_folder] [test_set_name]``
+``text-summarization predict config_file [output_folder] [test_set_name]``

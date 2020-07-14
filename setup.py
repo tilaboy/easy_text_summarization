@@ -1,8 +1,8 @@
 import os
 from setuptools import setup, find_packages
 
-NAME = "zhihu_text_summarization"
-VERSION = os.environ.get("ZHIHU_TEXT_SUMMARIZATION", '0.0.0')
+NAME = "text_summarization"
+VERSION = os.environ.get("TEXT_SUMMARIZATION", '0.0.0')
 
 INSTALL_REQUIRES = [
     "tensorflow >= 1.14.0",
@@ -30,7 +30,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "zhihu-text-summarization=zhihu_text_summarization.__main__:main",
+            "text-summarization=text_summarization.__main__:main",
         ],
     },
     test_suite="tests",
