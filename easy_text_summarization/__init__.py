@@ -8,7 +8,7 @@ import logging
 __author__ = """Chao Li"""
 __email__ = 'chaoli.job@google.com'
 __version__ = '0.0.0'
-name = "text_summarization"
+name = "easy_text_summarization"
 
 
 def define_logger(mod_name):

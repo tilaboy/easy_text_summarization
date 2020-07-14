@@ -1,4 +1,4 @@
-text-summarization
+easy-text-summarization
 ==================
 
 
@@ -20,7 +20,7 @@ Tutorial
 
 run:
 
-``text-summarization train cfg/tf.json``
+``easy-text-summarization train cfg/tf.json``
 
 and you will see the training start with the input documents specified in
 the config file.
@@ -31,8 +31,8 @@ Usage
 
 TRAIN: (example config\_file can be found in cfg/)
 
-``text-summarization train config_file``
+``easy-text-summarization train config_file``
 
 PROCESS BATCH:
 
-``text-summarization predict config_file [output_folder] [test_set_name]``
+``easy-text-summarization predict config_file [output_folder] [test_set_name]``

@@ -1,8 +1,8 @@
 import os
 from setuptools import setup, find_packages
 
-NAME = "text_summarization"
-VERSION = os.environ.get("TEXT_SUMMARIZATION", '0.0.0')
+NAME = "easy_text_summarization"
+VERSION = os.environ.get("easy_text_summarization", '0.0.0')
 
 INSTALL_REQUIRES = [
     "tensorflow >= 1.14.0",
@@ -30,7 +30,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "text-summarization=text_summarization.__main__:main",
+            "easy-text-summarization=easy_text_summarization.__main__:main",
         ],
     },
     test_suite="tests",
